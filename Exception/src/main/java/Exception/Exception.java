@@ -12,13 +12,11 @@ public class Exception {
     public static void main(String[] args){
 
         new Exception().error();
-<<<<<<< HEAD
 
     }
 
     public void error(){
-=======
->>>>>>> c5802a55aa1214fc1a4d72462df8ac711e7195a3
+
         }catch(ArithmeticException e){
             e.printStackTrace();
         }
