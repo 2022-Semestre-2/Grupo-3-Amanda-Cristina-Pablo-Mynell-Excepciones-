@@ -10,15 +10,19 @@ package Exception;
  */
 public class Exception {
     public static void main(String[] args){
-
+        try{
         new Exception().error();
+
 
     }
 
     public void error(){
 
+
         }catch(ArithmeticException e){
             e.printStackTrace();
+        }finally{
+            System.out.println("Terminado");
         }
     }
     public void error() throws ArithmeticException {
@@ -26,4 +30,3 @@ public class Exception {
         System.out.println("Imposible ="+i);
     }
 }
-
