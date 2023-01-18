@@ -11,9 +11,33 @@ package Exception;
 public class Exception {
     public static void main(String[] args){
         new Exception().error();
+        
+        /*
+        EJEMPLO TRY...CATCH CON EXCEPCION ARITMETICA
+        */
+        int numero1;
+        int numero2;
+    
+        
+        try{
+    
+            numero1 = 2;
+            numero2 = 0;
+            int resultado = numero1/numero2;
+        
+        }
+        catch(ArithmeticException e){
+        
+            System.out.println("Excepcion de tipo aritmetica, no se puede dividir un numero entre 0");
+    
+        }
+        
     }
+
     public void error(){
         int i= 10/0;
         System.out.println("Imposible ="+i);
     }
+    
+    
 }
